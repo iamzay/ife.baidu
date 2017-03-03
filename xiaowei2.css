@@ -3,29 +3,32 @@
 
 body{
     background-color:#ccc;
+    padding:0;
+    margin:0;  /* 为什么body的margin会有影响？*/
+}
+
+
+#top_bar{
+    background-color:rgb(51,51,51);
+    height:60px;
+    margin:0 0 0 0;
 }
 
 .logo{
-    position:relative;
-    left:50px;
-    top:2px;
-}
-
-#top_bar{
-    background-color:black;
-    margin:0 0;
+    position:absolute;
+    top:11px;
+    left:20px;
 }
 
 #navigation li{
     display:inline;
+    color:white;
 }
-
-
 
 #navigation{
     position:absolute;
-    top:0;
-    right:50px;
+    top:0px;
+    right:30px;
 }
 
 article,aside{
@@ -48,13 +51,15 @@ h3 + div{
 }
 
 a:link{
-    color:white;
+    color:navy;
+    text-decoration:none;
 }
 a:visited{
     color:green;
 }
 a:hover{
     color:silver;
+    text-decoration:underline;
 }
 a:active{
     color:navy;
@@ -89,8 +94,10 @@ ol{
 .demo-table{
     border:1px solid silver;
     border-collapse:collapse;
+    /* margin和padding都是0,为什么width不会自动设成100%*/
     margin:0 0;
     padding:0 0;
+    width:100%;
 }
 
 .demo-table td,.demo-table th{
@@ -98,22 +105,42 @@ ol{
 }
 .demo-table thead tr th{
     color:white;
-    background-color:black;
+    background-color:#333;
     text-align:left;
 }
 
 .demo-table tfoot th,.demo-table tfoot td{
     font-weight:bold;
-    background-color:gray;
+    background-color:#ccc;
     border:none;
+    text-align:left;
 }
 
-aside h2:before{
-    content:"|  ";
-    color:silver;
-    width:1px;
+aside header{
+    border-left:4px solid darkgray;
+}
+
+aside header > h2{
+    font-size:18px;
+    margin-left:10px;
+    margin-top:10px;
 }
 
 .form_items{
-    margin:10px 20% 
+    margin:10px 20%
+}
+
+footer{
+    background-color:black;
+    height:60px;
+    text-align:center;
+}
+
+footer p{
+    color:white;
+    padding-top:20px;
+    /*padding-top:25%;
+    padding-bottom:25%;*/
+   /* margin-top:25%;
+    margin-bottom:25%;*/
 }
