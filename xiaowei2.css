@@ -1,0 +1,101 @@
+body{
+    background-color:#ccc;
+}
+
+.logo{
+    position:relative;
+    left:50px;
+    top:2px;
+}
+
+#top_bar{
+    background-color:black;
+    margin:0 0;
+}
+
+#navigation li{
+    display:inline;
+}
+
+
+
+#navigation{
+    position:absolute;
+    top:0;
+    right:50px;
+}
+
+article,aside{
+    box-shadow:1px 1px 3px 1px #999;
+    margin:20px 20px;
+    padding:20px 20px;
+    background-color:white;
+}
+
+h3:first-child{
+    color:gray;
+}
+
+h3 + div{
+    color:gray;
+}
+
+.text{
+    text-indent:20px;
+}
+
+a:link{
+    color:white;
+}
+a:visited{
+    color:green;
+}
+a:hover{
+    color:silver;
+}
+a:active{
+    color:navy;
+}
+
+.items{
+    list-style:none;
+}
+
+p.pic{
+    border:1px solid gray;
+    text-align:center;
+    padding:0 0 0 0;
+}
+
+ol{
+    list-style:decimal;
+    font-weight:bold;
+}
+
+.demo-table{
+    border:1px solid silver;
+    border-collapse:collapse;
+    margin:0 0;
+    padding:0 0;
+}
+
+.demo-table td,.demo-table th{
+    border:1px solid silver;
+}
+.demo-table thead tr th{
+    color:white;
+    background-color:black;
+    text-align:left;
+}
+
+.demo-table tfoot th,.demo-table tfoot td{
+    font-weight:bold;
+    background-color:gray;
+    border:none;
+}
+
+aside h2:before{
+    content:"|  ";
+    color:silver;
+    width:1px;
+}
