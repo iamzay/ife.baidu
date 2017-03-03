@@ -61,10 +61,21 @@ a:active{
     list-style:none;
 }
 
-p.pic{
-    border:1px solid gray;
+.pic{
+    border:1px solid silver;
+    margin-left:40px;
+    width:200px;
+    height:200px;
     text-align:center;
-    padding:0 0 0 0;
+    padding:10px;
+}
+
+span + img{
+    margin:auto;
+    margin-top:10px;
+    margin-bottom:10px;
+    width:180px;
+    height:160px;
 }
 
 ol{
@@ -98,4 +109,8 @@ aside h2:before{
     content:"|  ";
     color:silver;
     width:1px;
+}
+
+.form_items{
+    margin:10px 20% 
 }
