@@ -1,146 +1,120 @@
-/* 请先不要评价我的提交，我只是想上来看看大家怎么做的，
-   我知道自己做得不好。*/
+*{
+    font-family:"Microsoft YaHei","黑体",sans-serif;
+}
 
 body{
-    background-color:#ccc;
-    padding:0;
-    margin:0;  /* 为什么body的margin会有影响？*/
+    margin:0;
+    background-color:rgb(204,204,204);
 }
-
 
 #top_bar{
-    background-color:rgb(51,51,51);
-    height:60px;
-    margin:0 0 0 0;
+    height:50px; background-color:rgb(64,64,64);
 }
-
-.logo{
-    position:absolute;
-    top:11px;
-    left:20px;
+#top_bar img{
+    position:absolute; top:5px; left:10px;
 }
-
+#navigation{
+    list-style:none; position:absolute; right:10px; top:0;
+}
 #navigation li{
     display:inline;
+}
+#navigation a:link{
+    color:white; text-decoration:none;
+}
+#navigation a:link{
     color:white;
 }
-
-#navigation{
-    position:absolute;
-    top:0px;
-    right:30px;
-}
-
-article,aside{
-    box-shadow:1px 1px 3px 1px #999;
-    margin:20px 20px;
-    padding:20px 20px;
-    background-color:white;
-}
-
-h3:first-child{
-    color:gray;
-}
-
-h3 + div{
-    color:gray;
-}
-
-.text{
-    text-indent:20px;
-}
-
-a:link{
-    color:navy;
-    text-decoration:none;
-}
-a:visited{
-    color:green;
-}
-a:hover{
-    color:silver;
+#navigation a:hover{
     text-decoration:underline;
 }
-a:active{
-    color:navy;
+#navigation li:last-child a:link{
+    color:#d9d9d9;
 }
 
-.items{
+article{
+    margin:25px; padding:25px; background-color:white; box-shadow: 10px 10px 5px #888888;
+}
+h2{
+    color:rgb(128,128,128); font-size:20px;
+}
+article section p{
+    text-indent:2em;
+}
+article header p{
+    color:rgb(179,179,179); font-size:15px;
+}
+article section ul{
     list-style:none;
 }
 
-.pic{
-    border:1px solid silver;
-    margin-left:40px;
-    width:200px;
-    height:200px;
-    text-align:center;
-    padding:10px;
+#pics figure{
+    width:200px; padding:10px; border:1px solid rgb(191,191,191); text-align:center;
+    margin:20px 0;
 }
-
-span + img{
-    margin:auto;
-    margin-top:10px;
+figure figcaption{
     margin-bottom:10px;
-    width:180px;
-    height:160px;
 }
 
 ol{
-    list-style:decimal;
     font-weight:bold;
 }
 
-.demo-table{
-    border:1px solid silver;
-    border-collapse:collapse;
-    /* margin和padding都是0,为什么width不会自动设成100%*/
-    margin:0 0;
-    padding:0 0;
+#table{
+    border:1px solid rgb(191,191,191); border-collapse:collapse; width:100%;
+    font-size:small; line-height:200%; text-align:left; 
+}
+#table caption{
+    text-align:left; font-weight:bold;
+}
+#table td,#table th{
+    border:1px solid rgb(191,191,191); padding-left:5px;
+}
+#table tfoot th{
+    border:none; background-color:rgb(166,166,166)
+}
+#table thead{
+    background-color:rgb(26,26,26); color:white;
+}
+#table tbody td:last-child{
+    text-decoration:underline; color:rgb(128, 0, 255);
+}
+
+#aside h1{
+    font-size:130%; border-left:5px solid rgb(166,166,166);
+    padding:10px;
+}
+#aside table{
+    margin-left:0; width:75%;
+}
+#aside table tr{
     width:100%;
 }
-
-.demo-table td,.demo-table th{
-    border:1px solid silver;
+#aside table td{
+    padding:5px; 
 }
-.demo-table thead tr th{
-    color:white;
-    background-color:#333;
-    text-align:left;
+#aside table td:first-child{
+    text-align:right;
 }
-
-.demo-table tfoot th,.demo-table tfoot td{
-    font-weight:bold;
-    background-color:#ccc;
-    border:none;
-    text-align:left;
+#aside table td:last-child{
+    text-align:left; padding-left:10px;
 }
-
-aside header{
-    border-left:4px solid darkgray;
+#aside table .tips{
+    color:#cccccc; padding-bottom:10px;
 }
-
-aside header > h2{
-    font-size:18px;
-    margin-left:10px;
-    margin-top:10px;
+#aside textarea{
+    width:100%; height:100px;
+}
+#aside #submit{
+    width:100%; background-color:rgb(51, 51, 255); color:white; border-radius:15px;
+    height:45px;
+}
+#aside #tmp{
+    padding-top:0;
 }
 
-.form_items{
-    margin:10px 20%
+#footer{
+    background-color:black; height:100px; color:white;
+    text-align:center; padding-top:10px;
 }
 
-footer{
-    background-color:black;
-    height:60px;
-    text-align:center;
-}
-
-footer p{
-    color:white;
-    padding-top:20px;
-    /*padding-top:25%;
-    padding-bottom:25%;*/
-   /* margin-top:25%;
-    margin-bottom:25%;*/
-}

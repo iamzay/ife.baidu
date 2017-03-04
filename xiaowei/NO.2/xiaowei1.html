@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link href="xiaowei.css" rel="stylesheet"/>
+        <link href="xiaowei2.css" rel="stylesheet"/>
         <title>小薇学院作业2</title>
     </head>
     <body>
         <div id="top_bar">
-            <img alt="baidu_logo" src="http://p1.bqimg.com/586660/2b0b97149295eb98.png"/>
+            <img alt="baidu_logo" src="http://p1.bpimg.com/586660/9bad0d9a3be985a0.png" width="100px"/>
             <ul id="navigation">
                 <li><a href="">导航链接</a></li>
                 <li><a href="">导航链接</a></li>
@@ -66,7 +66,7 @@
                     </figure></li>
                     <li><figure>
                         <figcaption>好看的图片</figcaption>
-                        <img alt="咬人猫" src="http://p1.bqimg.com/586660/beb304704be402ef.jpg" width="200"/>
+                        <img alt="咬人猫" src="http://p1.bqimg.com/586660/beb304704be402ef.jpg" width="200px"/>
                     </figure></li>
                     <li><figure>
                         <figcaption>好看的图片</figcaption>
@@ -97,7 +97,7 @@
                     <li>排名二</li>
                     <li>排名三</li>
                 </ol>
-                <table>
+                <table id="table">
                     <caption>下面是一个表格</caption>
                     <thead>
                         <tr>
@@ -128,7 +128,7 @@
                 </table>
             </section>
         </article>
-        <article>
+        <article id="aside">
             <h1>这里以后是一个侧栏，这是侧栏的标题</h1>
             <form action="">
                 <table>
@@ -136,7 +136,7 @@
                         <td>请输入邮箱地址</td><td><input name="mail" type="text" value="这是一个文本输入框"/></td>
                     </tr>
                     <tr>
-                        <td></td><td>邮箱地址请按要求格式输入</td>
+                        <td></td><td class="tips">邮箱地址请按要求格式输入</td>
                     </tr>
                     <tr>
                         <td>请输入密码</td><td><input name="password" type="password"/></td>
@@ -145,7 +145,7 @@
                         <td>请重复输入密码</td><td><input name="password" type="password"/></td>
                     </tr>
                     <tr>
-                        <td></td><td>密码请为6-16位英文数字</td>
+                        <td></td><td class="tips">密码请为6-16位英文数字</td>
                     </tr>
                     <tr>
                         <td>性别</td><td><input name="sex" type="radio" value="male" id="male" checked/><label for="male">男</label> <input name="sex" type="radio" id="female" value="female"/><label for="female">女</label></td>
@@ -166,16 +166,16 @@
                         </td>
                     </tr>
                     <tr>
-                        <td>个人描述</td>
+                        <td id="tmp"><span>个人描述</span></td>
                         <td>
                             <textarea>这是一个多行输入框，输入您的个人描述</textarea>
                         </td>
                     </tr>
                 </table>
-                <input type="submit" value="确认提交"/>
+                <input type="submit" value="确认提交" id="submit"/>
             </form>
         </article>
-        <footer>
+        <footer id="footer">
             <p>
                 版权所有&copy
             </p>
