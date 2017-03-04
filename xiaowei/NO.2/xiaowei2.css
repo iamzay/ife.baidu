@@ -8,7 +8,7 @@ body{
 }
 
 #top_bar{
-    height:50px; background-color:rgb(64,64,64);
+    height:50px; background-color:rgb(64,64,64); width:100%;
 }
 #top_bar img{
     position:absolute; top:5px; left:10px;
@@ -109,7 +109,7 @@ ol{
     width:100%; background-color:rgb(51, 51, 255); color:white; border-radius:15px;
     height:45px;
 }
-#aside #tmp{
+#aside #descript{
     vertical-align:text-top;
 }
 

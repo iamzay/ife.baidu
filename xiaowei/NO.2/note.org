@@ -1,16 +1,60 @@
-1. 为什么下面的代码无法居中？
-   #+BEGIN_SRC css
-     footer{
-         background-color:black;
-         height:60px;
-         text-align:center;
-     }
+# copyright的垂直居中
+这是html文件中的相关代码：
+```
+        <footer id="footer">
+            <p>
+                版权所有&copy
+            </p>
+        </footer>
+```
+为了让文字垂直居中，css是这样写的：
+```
+ footer{
+              background-color:black;
+              height:60px;
+              text-align:center;
+          }
+					
+footer p{
+              color:white;
+              margin-top:25%;
+              margin-bottom:25%;
+          }
+```
+起初以为这样的效果会是margin-top和margin-bottom都占footer元素height的25%，但实际这样设置导致margin值很大。其实是记错了，《CSS权威指南》上P214上是这样说的：
+> As I mentioned earlier, it’s possible to set percentage values for the margins of an element. Percentages are computed in relation to the width of the parent element, so
+they change if the parent element’s width changes in some way. 
+所以margin（所有四个方向的）的百分比是相对父元素的width而不是height。margin-bottom和margin-top的百分比相对父元素的width这点显得很奇怪，原因是父元素的height依赖于子元素的height，所以为了避免循环，子元素的height不能再依赖于父元素。
+# 顶栏宽度无法充满页面
+顶栏指放百度logo和四个导航链接的那一栏，相关的css代码如下：
+```
+#top_bar{
+    height:50px;
+		background-color:rgb(64,64,64);
+		width:100%;
+}
+```
+这样设置后顶栏宽度无法充满页面。因为top_bar是放在body元素内的，想到可能是body的padding在作怪，于是将其设为0，结果依旧。看了两份代码，发现他们都这样设置了：
+```
+*{
+    padding:0;
+    margin:0;
+}
+```
+尝试将body的css改成如下：
+```
+body{
+    margin:0;
+    background-color:rgb(204,204,204);
+}
+```
+像这样将body的margin显示设为0后顶栏的宽度充满了页面。我开始以为body不会有margin，由此才知道不是这样。
+# vertical-align 设置垂直对齐
+表单的最后一项“个人描述”四个字需要同textarea元素的顶部对齐，我设置单元格的padding-top为0没有做到这一点，解决方法如下：
+```
+#aside #descript{
+    vertical-align:text-top;
+}
+```
 
-     footer p{
-         color:white;
-         margin-top:25%;
-         margin-bottom:25%;
-     }
-   #+END_SR
-   起初以为margin的百分比是相对于containing block的height，其实是width
-   见css权威指南P214
+
