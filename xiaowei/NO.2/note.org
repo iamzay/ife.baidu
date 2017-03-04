@@ -1,0 +1,16 @@
+1. 为什么下面的代码无法居中？
+   #+BEGIN_SRC css
+     footer{
+         background-color:black;
+         height:60px;
+         text-align:center;
+     }
+
+     footer p{
+         color:white;
+         margin-top:25%;
+         margin-bottom:25%;
+     }
+   #+END_SR
+   起初以为margin的百分比是相对于containing block的height，其实是width
+   见css权威指南P214
