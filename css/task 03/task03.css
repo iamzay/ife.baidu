@@ -1,40 +1,50 @@
+*{
+    margin:0; padding:0; background-color:white;
+}
+html{
+    padding-bottom:220px;
+}
 body{
-    background-color:#eee; margin:20px; padding:20px; border:1px solid black;
-    position:relative; top:0; left:0; right:0; bottom:0; /*overflow:hidden;*/
+    margin:20px; border:1px solid black; background-color:#eee; padding:20px;
+    width:auto; height:auto;
+}
+#left{
+    float:left; width:160px; border:1px solid black; height:80px; padding:20px;
 }
 
 img{
-    width:80px; height=80px;
+    width:80px; height:80px;
 }
-
-#left{
-    position:absolute; top:20px; left:20px; width:160px;  /* containing box is html element*/
-    background-color:white; border:1px solid black;
-    padding:20px;
+#left img{
+    float:left;
 }
 #left span{
-    position:absolute; top:20px; left:120px;
+    float:right;
 }
 
-#middle{
-    position:absolute; left:240px; top:20px; padding:20px; right:160px;
-    border:1px solid black; background-color:white;
+#center{
+    margin-left:220px;  padding:20px; margin-right:140px; margin-top:0;
+    border:1px solid black;
+}
+
+ul{
+    list-style:none;
 }
 
 #right{
-    position:absolute; top:20px; right:20px; padding:20px; margin:0; width:80px; height:380px;
-    border:1px solid black; background-color:white;
+    float:right; border:1px solid black;
+    padding:20px;
 }
-#right ul{
-    list-style:none; margin:0; padding:0;
-    position:absolute; top:20px; right:20px;
+#right img{
+    display:block;
+    margin-bottom:20px;
 }
-#right li{
-    margin:20px 0;
-}
-#right li:first-child{
-    margin-top:0;
-}
-#right li:last-child{
+#right ul img:last-child{
     margin-bottom:0;
+}
+body:after{
+    content:"";
+    visibility:hidden;
+    display:block;
+    clear:both;
 }
