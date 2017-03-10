@@ -1,0 +1,40 @@
+body{
+    background-color:#eee; margin:20px; padding:20px; border:1px solid black;
+    position:relative; top:0; left:0; right:0; bottom:0; /*overflow:hidden;*/
+}
+
+img{
+    width:80px; height=80px;
+}
+
+#left{
+    position:absolute; top:20px; left:20px; width:160px;  /* containing box is html element*/
+    background-color:white; border:1px solid black;
+    padding:20px;
+}
+#left span{
+    position:absolute; top:20px; left:120px;
+}
+
+#middle{
+    position:absolute; left:240px; top:20px; padding:20px; right:160px;
+    border:1px solid black; background-color:white;
+}
+
+#right{
+    position:absolute; top:20px; right:20px; padding:20px; margin:0; width:80px; height:380px;
+    border:1px solid black; background-color:white;
+}
+#right ul{
+    list-style:none; margin:0; padding:0;
+    position:absolute; top:20px; right:20px;
+}
+#right li{
+    margin:20px 0;
+}
+#right li:first-child{
+    margin-top:0;
+}
+#right li:last-child{
+    margin-bottom:0;
+}
