@@ -6,68 +6,197 @@
     font-size:15px;
 }
 
-h3 { font-size:16px; }
-h2 { font-size:17px; }
-h1 { font-size:18px; }
-
 body{
     background-color:Gainsboro;
-    overflow:auto;
 }
 
-#navigation li{ display:inline; list-style:circle; }
+/* 这里是顶栏的css */
+#navigation li{
+    display:inline-block;
+}
+#navigation li a{
+    text-decoration:none;
+}
+#navigation li:before{
+    content:"●";
+    margin:0 10px;
+}
 #top_bar {
     height:55px;
-
     background:gray;
     position:relative;
 }
 #top_bar img{
     position:absolute;
-    left:5px;
+    left:10px;
     top:5px;
 }
 #top_bar ul{
     position:absolute;
-    right:5px;
-    top:15px;
-    bottom:15px;
+    right:20px;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
-a:link{ color:white; }
-a:visited { color:white; }
-a:hover { font-weight:bold; }
+#navigation a:link{ color:white; }
+#navigation a:visited { color:white; }
+#navigation a:hover { font-weight:bold; }
+#navigation li:last-child a{ color:silver; }
 
-#aside{
+/* 这里是侧栏定位相关的css */
+aside {
     float:right;
-    padding:20px;
-    margin:20px;
     width:400px;
+    margin:20px;
+    padding:20px;
     background-color:white;
-    box-shadow:5px 5px 5px;
 }
-#aside h1{
-    border-left:3px solid #ccc;
+
+/* 这里是文章定位相关的css */
+article{
+    margin:20px;
+    margin-right:440px;
+    background-color:white;
+    padding:30px 20px;
+}
+article,aside{
+    box-shadow:2px 2px 2px rgba(0,0,0,0.4);
+}
+
+/* 这里是底栏css */
+footer{
+    position:relative;
+    height:55px;
+    background-color:MidnightBlue;
+}
+footer p{
+    width:100%;
+    position:absolute;
+    /* margin:25% auto; */
+    color:white;
+    text-align:center;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* 文章公共样式 */
+article h1{
+    font-size:18px;
+    margin-bottom:15px;
+}
+article h2{
+    font-size:16px;
+    margin-bottom:15px;
+    color:grey;
+}
+article header p{
+    font-size:12px;
+    margin-bottom:15px;
+    color:gray;
+}
+article section p{
+    text-indent:2em;
+}
+article section img{
+    margin:20px 0;
+}
+
+/* 第二篇文章列表 */
+#list1{
+    margin-left:30px;
+    list-style:none;
+}
+
+/* 用inline-block排列图片 */
+figure{
+    text-align:center;
+    border:1px solid silver;
+    display:inline-block;
+    padding:20px;
+    padding-bottom:0;
+    margin:10px;
+}
+figure img{
+    width:180px;
+    margin:0;
+}
+
+/* 最后一篇文章 */
+article ol{
+    margin-left:30px;
+    font-size:16px;
+}
+
+/* 表格 */
+article table{
+    border:1px solid silver;
+    border-collapse:collapse;
+    width:100%;
+    font-size:small;
+    text-align:left;
+    margin-top:20px;
+}
+article table caption{
+    text-align:left;
+}
+article thead th,article tbody td{
+    border:1px solid silver;
+}
+article tfoot th{
+    background-color:: ;rgb(166,166,166);
+}
+article thead{
+    background-color:rgb(26,26,26);
+    color:white;
+}
+article tbody td:last-child{
+    text-decoration:underline;
+    color:rgb(128,0,255);
+}
+thead th,tbody td,tfoot th{
+    padding:5px;
+}
+tfoot{
+    background-color:silver;
+}
+
+/* 侧栏 */
+aside h1{
+    font-size:16px;
+    border-left:3px solid silver;
     padding:10px;
 }
 
-#left{
-    position:absolute;
-    top:75px;
-    left:20px;
-    right:440px;
+aside table{
+    margin-left:0; width:100%;
+}
+aside table tr{
+    width:100%;
+}
+aside table td{
+    padding:5px;
+    font-size:small;
+}
+aside table td:first-child{
+    text-align:right;
+}
+aside table td:last-child{
+    text-align:left; padding-left:10px;
+}
+aside table .tips{
+    color:#cccccc; padding-bottom:10px;
+}
+aside textarea{
+    width:100%; height:100px;
+}
+aside #submit{
+    width:100%; background-color:rgb(51, 51, 255); color:white; border-radius:15px;
+    height:45px;
+}
+aside #descript{
+    vertical-align:text-top;
 }
 
-article{
-    background-color:white;
-    padding:30px 30px;
-    margin:20px 0;
-}
-#article1{
-    margin-top:0;
-}
-#footer{
-    position:absolute;
-    bottom:0;
-    width:100%;
+*[value],td span{
+    font-size:small;
 }

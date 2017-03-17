@@ -1,0 +1,5 @@
++ margin:25%，这个百分比是相对于父元素的width，不是高度！
++ 元素绝对定位后父元素是感觉不到其高度的，父元素的高度为0，此时top:50%和top:0相同
++ inline-box里的图片设置margin:0 20px;没有效果(figure img)
++ figure中的img好像自带上下margin,而且不能消除
++ 父元素设置padding对ul不起作用

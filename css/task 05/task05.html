@@ -7,7 +7,7 @@
     </head>
     <body>
         <div id="top_bar">
-            <img alt="baidu_logo" src="http://p1.bpimg.com/586660/9bad0d9a3be985a0.png" width="100px"/>
+            <img alt="baidu_logo" src="http://i1.piimg.com/586660/3cee30fe61764072.png" width="100px"/>
             <ul id="navigation">
                 <li><a href="">导航链接</a></li>
                 <li><a href="">导航链接</a></li>
@@ -15,7 +15,53 @@
                 <li><a href="">导航链接</a></li>
             </ul>
         </div>
-        <div id="left">
+        <aside>
+            <h1>这里以后是一个侧栏，这是侧栏的标题</h1>
+            <form action="">
+            <table>
+            <tr>
+            <td>请输入邮箱地址</td><td><input name="mail" type="text" value="这是一个文本输入框"/></td>
+                    </tr>
+            <tr>
+            <td></td><td class="tips">邮箱地址请按要求格式输入</td>
+                    </tr>
+            <tr>
+            <td>请输入密码</td><td><input name="password" type="password"/></td>
+                    </tr>
+            <tr>
+            <td>请重复输入密码</td><td><input name="password" type="password"/></td>
+                    </tr>
+            <tr>
+            <td></td><td class="tips">密码请为6-16位英文数字</td>
+                    </tr>
+            <tr>
+            <td>性别</td><td><input name="sex" type="radio" value="male" id="male" checked/><label for="male">男</label> <input name="sex" type="radio" id="female" value="female"/><label for="female">女</label></td>
+                    </tr>
+            <tr>
+            <td>城市</td><td><select name="city">
+            <option value="changsha">长沙</option>
+            <option value="wuhan">武汉</option>
+            <option value="shanghai">上海</option>
+                        </select></td>
+                    </tr>
+            <tr>
+            <td>爱好</td>
+            <td>
+            <input name="hobby" type="checkbox" value="sport" id="sport"/><label for="sport">运动</label> 
+            <input name="hobby" type="checkbox" value="sport" id="art"/><label for="art">艺术</label> 
+            <input name="hobby" type="checkbox" value="sport" id="science"/><label for="science">科学</label>
+                        </td>
+                    </tr>
+            <tr>
+            <td id="descript"><span>个人描述</span></td>
+            <td>
+            <textarea>这是一个多行输入框，输入您的个人描述</textarea>
+                        </td>
+                    </tr>
+                </table>
+            <input type="submit" value="确认提交" id="submit"/>
+            </form>
+        </aside>
         <article id="article1">
             <header>
                 <h1>文章一级标题</h1>
@@ -49,7 +95,7 @@
                     这是一个很长很长的段落，这是一个很长很长的段落，<a href="http://ife.baidu.com">这里是一个链接链接到http://ife.baidu.com</a>这是一个很长很长的段落，这是一个很长很长的段落，<strong>这里有个粗体字</strong>
                     这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落。</p>
                 <img src="http://p1.bqimg.com/586660/64b384efc52ce901.jpg" alt="咬人猫" width="400px"/>
-                <ul>
+                <ul id="list1">
                     <li>列表项目一</li>
                     <li>列表项目二</li>
                     <li>列表项目三</li>
@@ -61,28 +107,26 @@
                 <h1>图片</h1>
             </header>
             <section>
-                <ul id="pics">
-                    <li><figure>
-                        <figcaption>好看的图片</figcaption>
-                        <img alt="咬人猫" src="http://p1.bqimg.com/586660/beb304704be402ef.jpg" width="200"/>
-                    </figure></li>
-                    <li><figure>
-                        <figcaption>好看的图片</figcaption>
-                        <img alt="咬人猫" src="http://p1.bqimg.com/586660/beb304704be402ef.jpg" width="200px"/>
-                    </figure></li>
-                    <li><figure>
-                        <figcaption>好看的图片</figcaption>
-                        <img alt="咬人猫" src="http://p1.bqimg.com/586660/beb304704be402ef.jpg" width="200"/>
-                    </figure></li>
-                    <li><figure>
-                        <figcaption>好看的图片</figcaption>
-                        <img alt="咬人猫" src="http://p1.bqimg.com/586660/beb304704be402ef.jpg" width="200"/>
-                    </figure></li>
-                    <li><figure>
-                        <figcaption>好看的图片</figcaption>
-                        <img alt="咬人猫" src="http://p1.bqimg.com/586660/beb304704be402ef.jpg" width="200"/>
-                    </figure></li>
-                </ul>
+                <figure>
+                    <figcaption>好看的图片</figcaption>
+                    <img alt="咬人猫" src="http://p1.bqimg.com/586660/beb304704be402ef.jpg" width="200"/>
+                </figure>
+                <figure>
+                    <figcaption>好看的图片</figcaption>
+                    <img alt="咬人猫" src="http://p1.bqimg.com/586660/beb304704be402ef.jpg" width="200px"/>
+                </figure>
+                <figure>
+                    <figcaption>好看的图片</figcaption>
+                    <img alt="咬人猫" src="http://p1.bqimg.com/586660/beb304704be402ef.jpg" width="200"/>
+                </figure>
+                <figure>
+                    <figcaption>好看的图片</figcaption>
+                    <img alt="咬人猫" src="http://p1.bqimg.com/586660/beb304704be402ef.jpg" width="200"/>
+                </figure>
+                <figure>
+                    <figcaption>好看的图片</figcaption>
+                    <img alt="咬人猫" src="http://p1.bqimg.com/586660/beb304704be402ef.jpg" width="200"/>
+                </figure>
             </section>
         </article>
         <article>
@@ -90,16 +134,16 @@
                 <h1>最后一篇文章一级标题</h1>
                 <h2>文章二级标题</h2>
                 <p>
-                    文章作者 文章发表时间
+                文章作者 文章发表时间
                 </p>
             </header>
             <section>
                 <ol>
-                    <li>排名一</li>
-                    <li>排名二</li>
-                    <li>排名三</li>
+                    <li>排名1</li>
+                    <li>排名2</li>
+                    <li>排名3</li>
                 </ol>
-                <table id="table">
+                <table>
                     <caption>下面是一个表格</caption>
                     <thead>
                         <tr>
@@ -130,55 +174,7 @@
                 </table>
             </section>
         </article>
-        </div>
-        <article id="aside">
-            <h1>这里以后是一个侧栏，这是侧栏的标题</h1>
-            <form action="">
-                <table>
-                    <tr>
-                        <td>请输入邮箱地址</td><td><input name="mail" type="text" value="这是一个文本输入框"/></td>
-                    </tr>
-                    <tr>
-                        <td></td><td class="tips">邮箱地址请按要求格式输入</td>
-                    </tr>
-                    <tr>
-                        <td>请输入密码</td><td><input name="password" type="password"/></td>
-                    </tr>
-                    <tr>
-                        <td>请重复输入密码</td><td><input name="password" type="password"/></td>
-                    </tr>
-                    <tr>
-                        <td></td><td class="tips">密码请为6-16位英文数字</td>
-                    </tr>
-                    <tr>
-                        <td>性别</td><td><input name="sex" type="radio" value="male" id="male" checked/><label for="male">男</label> <input name="sex" type="radio" id="female" value="female"/><label for="female">女</label></td>
-                    </tr>
-                    <tr>
-                        <td>城市</td><td><select name="city">
-                            <option value="changsha">长沙</option>
-                            <option value="wuhan">武汉</option>
-                            <option value="shanghai">上海</option>
-                        </select></td>
-                    </tr>
-                    <tr>
-                        <td>爱好</td>
-                        <td>
-                            <input name="hobby" type="checkbox" value="sport" id="sport"/><label for="sport">运动</label> 
-                            <input name="hobby" type="checkbox" value="sport" id="art"/><label for="art">艺术</label> 
-                            <input name="hobby" type="checkbox" value="sport" id="science"/><label for="science">科学</label>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td id="descript"><span>个人描述</span></td>
-                        <td>
-                            <textarea>这是一个多行输入框，输入您的个人描述</textarea>
-                        </td>
-                    </tr>
-                </table>
-                <input type="submit" value="确认提交" id="submit"/>
-            </form>
-        </article>
-        <footer id="footer">
+        <footer>
             <p>
                 版权所有&copy
             </p>
