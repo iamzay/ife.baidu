@@ -1,0 +1,73 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    line-height:1.5;
+    font-size:15px;
+}
+
+h3 { font-size:16px; }
+h2 { font-size:17px; }
+h1 { font-size:18px; }
+
+body{
+    background-color:Gainsboro;
+    overflow:auto;
+}
+
+#navigation li{ display:inline; list-style:circle; }
+#top_bar {
+    height:55px;
+
+    background:gray;
+    position:relative;
+}
+#top_bar img{
+    position:absolute;
+    left:5px;
+    top:5px;
+}
+#top_bar ul{
+    position:absolute;
+    right:5px;
+    top:15px;
+    bottom:15px;
+}
+
+a:link{ color:white; }
+a:visited { color:white; }
+a:hover { font-weight:bold; }
+
+#aside{
+    float:right;
+    padding:20px;
+    margin:20px;
+    width:400px;
+    background-color:white;
+    box-shadow:5px 5px 5px;
+}
+#aside h1{
+    border-left:3px solid #ccc;
+    padding:10px;
+}
+
+#left{
+    position:absolute;
+    top:75px;
+    left:20px;
+    right:440px;
+}
+
+article{
+    background-color:white;
+    padding:30px 30px;
+    margin:20px 0;
+}
+#article1{
+    margin-top:0;
+}
+#footer{
+    position:absolute;
+    bottom:0;
+    width:100%;
+}
