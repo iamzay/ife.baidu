@@ -23,7 +23,7 @@ body{
 }
 #top_bar {
     height:55px;
-    background:gray;
+    background:#333;
     position:relative;
 }
 #top_bar img{
@@ -67,7 +67,7 @@ article,aside{
 footer{
     position:relative;
     height:55px;
-    background-color:MidnightBlue;
+    background-color:#000;
 }
 footer p{
     width:100%;
@@ -143,10 +143,10 @@ article thead th,article tbody td{
     border:1px solid silver;
 }
 article tfoot th{
-    background-color:: ;rgb(166,166,166);
+    background-color:silver;
 }
 article thead{
-    background-color:rgb(26,26,26);
+    background-color:#333;
     color:white;
 }
 article tbody td:last-child{
@@ -190,7 +190,7 @@ aside textarea{
     width:100%; height:100px;
 }
 aside #submit{
-    width:100%; background-color:rgb(51, 51, 255); color:white; border-radius:15px;
+    width:100%; background-color:#333; color:white; border-radius:15px;
     height:45px;
 }
 aside #descript{
