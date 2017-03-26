@@ -1,0 +1,19 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+#center {
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    margin: auto;
+    right: 0px;
+    left: 0px;
+    width: 450px;
+    height: 300px;
+}
+
+#right-in {
+    margin-right:50px;
+}
