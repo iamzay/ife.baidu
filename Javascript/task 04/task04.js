@@ -64,7 +64,7 @@ function insertNumber(value,direction){
     numberTile.style.display="inline-block";
     numberTile.style.margin="10px";
     numberTile.style.marginLeft="0px";
-    numberTile.style.marginTop="0px";
+    numberTile.style.marginBottom="0px";
     numberTile.style.padding="10px";
     numberTile.style.textAlign="center";
     if(direction){
