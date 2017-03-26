@@ -1,0 +1,34 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+button {
+    display: inline-block;
+    margin:0 10px;
+}
+
+#input {
+    position: absolute;
+    width: 400px;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    margin:0 auto;
+}
+
+#tile-container {
+    position: absolute;
+    width: 905px;
+    height: 100px;
+    left: 0px;
+    right: 0px;
+    top:20px;
+    margin:10px auto;
+}
+
+.tile {
+    width: 10px;
+    position: absolute;
+    background-color: red;
+}
