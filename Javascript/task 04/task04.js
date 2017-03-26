@@ -67,9 +67,16 @@ function insertNumber(value,direction){
     numberTile.style.marginBottom="0px";
     numberTile.style.padding="10px";
     numberTile.style.textAlign="center";
+    numberTile.onclick=clickTile;
+    numberTile.style.cursor="pointer";
     if(direction){
         block.insertBefore(numberTile,block.firstChild);
     } else{
         block.appendChild(numberTile);
     }
+}
+
+function clickTile(event){
+    var elem=event.target;
+    elem.parentNode.removeChild(elem);
 }
