@@ -1,0 +1,44 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+
+.flex-container {
+    display:flex;
+    flex-flow:row wrap;
+    justify-content:space-between;
+    align-content:flex-start;
+    padding:20px;
+    /* width:100%; */
+}
+
+div div {
+    width: 150px;
+    border:1px solid #f00;
+}
+
+#item1 {
+    height: 120px;
+    order:2;
+}
+
+#item2 {
+    height: 100px;
+    order:3;
+}
+
+#item3 {
+    height: 40px;
+    order:4;
+}
+
+#item4 {
+    margin-bottom:10px;
+    height: 200px;
+    border:1px solid #0f0;
+    order:1;
+}
+
+

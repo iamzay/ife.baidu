@@ -1,0 +1,39 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+
+.flex-container {
+    display:flex;
+    flex-flow:row wrap;
+    justify-content:space-between;
+    padding:20px;
+    align-items:center;
+    /* width:100%; */
+}
+
+div div {
+    width: 150px;
+    border:1px solid #f00;
+}
+
+#item1 {
+    height: 120px;
+}
+
+#item2 {
+    height: 100px;
+}
+
+#item3 {
+    height: 40px;
+}
+
+#item4 {
+    height: 200px;
+    border:1px solid #0f0;
+}
+
+
