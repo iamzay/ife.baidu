@@ -359,9 +359,24 @@ article {
     color:#5a5b5b;
 }
 
-#quote span {
+#quote1{
     font: 72px "黑体";
     color: #d45d5c;
+    position: absolute;
+    top: -18px;
+    left: -36px;
+}
+
+#quote2 {
+    font: 72px "黑体";
+    color: #d45d5c;
+    position: absolute;
+    bottom: -64px;
+    right: -18px;
+}
+
+#quote p {
+    text-indent:36px;
 }
 
 #bottom-left #computer {
