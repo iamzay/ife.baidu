@@ -1,0 +1,82 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing:border-box;
+}
+
+body {
+    padding: 1px;
+}
+
+.grid-container {
+    width: 100%;
+    padding: 10px;
+}
+
+.border,
+.border [class*='col-'] {
+    border:1px solid #999;
+}
+
+// 为每行清除浮动
+.row:before,
+.row:after {
+    content:"";
+    display:table;
+    clear:both;
+}
+
+// 每列中的item用浮动排列
+[class*='col-']{
+    float:left;
+    height: 50px;
+    margin:10px;
+}
+
+@media screen and (min-width:768px){
+    [class*='col-']{
+        float:left;
+        height: 50px;
+        /* margin:10px; */
+    }
+
+    [class*='col-1-'] {
+        width:33.333%;
+    }
+    .col-2-2,.col-3-5 {
+        width:50%;
+    }
+    .col-2-1,.col-2-3 {
+        width: 25%;
+    }
+    .col-3-1,.col-3-2 {
+        width: 8.333%;
+    }
+    .col-3-3,.col-3-4 {
+        width: 16.666%;
+    }
+}
+
+@media screen and (max-width:768px){
+    [class*='col-']{
+        float:left;
+        height: 50px;
+        /* margin:10px; */
+    }
+
+    .col-1-1,.col-1-2,.col-2-2{
+        width: 50%;
+    }
+    .col-1-3 {
+        width: 100%;
+    }
+    .col-3-1,.col-3-2 {
+        width: 16.666%;
+    }
+    .col-3-3 {
+        width: 66.666%;
+    }
+    .col-2-1,.col-2-3,.col-3-4,.col-3-5{
+        width: 25%;
+    }
+}
