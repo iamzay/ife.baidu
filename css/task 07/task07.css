@@ -1,0 +1,395 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing:border-box;
+}
+
+body {
+    width: 100%;
+    min-width:1280px;
+    font-family:"微软雅黑",sans-serif;
+}
+
+// 实现网格布局
+.grid-container {
+    width: 100%;
+}
+
+.row {
+    text-align:center;
+}
+
+.row:before,
+.row:after {
+    content:"";
+    display:block;
+    clear:both;
+}
+
+[class*='col-'] {
+    float:left;
+    min-height:1px;
+}
+
+.col-12 {
+    width: 100%;
+}
+.col-3 {
+    width: 25%;
+}
+.col-4 {
+    width: 33.333%;
+}
+.col-8 {
+    width: 66.667%;
+}
+
+/* 顶栏样式 */
+#top {
+    height: 56px;
+    position: relative;
+    text-align:left;
+}
+
+#book {
+    position: absolute;
+    margin-left:50px;
+    top: 50%;
+    margin-top: -15.5px;
+}
+
+#title {
+    position: absolute;
+    margin-left: 90px;
+    top: 50%;
+    transform:translateY(-50%);
+}
+
+#top-list {
+    list-style:none;
+    position: absolute;
+    right: 70px;
+    top: 0px;
+}
+#top-list li{
+    display:inline-block;
+    margin-left:30px;
+    height: 56px;
+    position: relative;
+    padding:10px;
+}
+#top-list li:last-child:before {
+    display:inline-block;
+    position: absolute;
+    margin-top:3.5px;
+    right:43px;
+    content:"";
+    width: 14px;
+    height: 17px;
+    background-image:url(images/login.png);
+}
+#top-list a{
+    color: gray;
+    text-decoration:none;
+}
+
+#top-list li:hover {
+    color:rgb(231,79,77);
+    border-bottom: 3px solid red;
+}
+#top-list a:hover{: ;
+    color:rgb(231,79,77);
+}
+
+/* 第二栏 */
+#first-pic {
+    width: 100%;
+}
+
+/* 第三栏 */
+#row3 {
+    text-align:center;
+    color:gray;
+}
+#row3 img {
+    margin:50px auto 50px auto;
+    width: 42px;
+}
+#row3 p {
+    padding-bottom:10px;
+    margin-bottom: 65px;
+    border-right:2px solid gray;
+}
+#row3 #row3-lastp {
+    border-right:none;
+}
+
+/* 第四栏 */
+#row4 {
+    height: 364px;
+    background-color:rgb(237,237,237);
+    text-align:center;
+}
+
+#row4-pic {
+    margin-top:90px;
+}
+
+#row4 p {
+    margin-top: 49px;
+    font-size: 54px;
+    color:rgb(161,161,161);
+}
+
+/* 第五栏 */
+#form select {
+    width: 236px;
+    height: 36px;
+}
+
+#form button {
+    width: 236px;
+    height: 36px;
+    background-color:rgb(190,78,72);
+    border: none;
+    color: white;
+}
+
+#row5 {
+    text-align:center;
+    color:white;
+    background:url(images/shadow.png) no-repeat;
+    background-size:100% 100%;
+}
+
+#row5 p {
+    margin:50px auto;
+}
+
+#row5 p:nth-child(2) {
+    font-size:0.8rem;
+}
+
+#form {
+    width: 1029px;
+    margin:0 auto;
+    margin-bottom:132px;
+}
+
+/* 第六栏 */
+#row6 {
+    text-align:center;
+    position: relative;
+    background-color:rgb(248,248,248);
+}
+#row6 #four-pics {
+    margin:113px 0px 127px 0px;
+}
+
+/* 第七栏 */
+#row7-col1 {
+    color:white;
+    line-height:1;
+}
+#row7-col1 {
+    background-image:url(images/1.jpg);
+    background-size:100% 100%;
+}
+#row7-col1 p:nth-child(1)  {
+    margin-top:132px;
+    margin-bottom:15px;
+    font-size: 50px;
+}
+#row7-col1 p:nth-child(2) {
+    font-size:100px;
+    margin-bottom:30px;
+}
+#row7-col1 p:nth-child(4) {
+    margin:30px 0 130px 0;
+}
+
+#row7-left {
+    position: relative;
+    height: 518px;
+}
+#row7-left h5 {
+    margin:150px auto 20px auto;
+    color:black;
+    font-size:20px;
+}
+#row7-left h5 span {
+    color:red;
+    font-size:20px;
+}
+#row7-left p {
+    width: 288px;
+    font-size:12px;
+    line-height: 2.5;
+    color:silver;
+    text-align:left;
+    margin:auto;
+}
+#row7-left button {
+    color:red;
+    border:1px solid red;
+    background-color:white;
+    padding:5px 20px;
+    margin-top:40px;
+}
+
+#row7-left p:before {
+    content:"";
+    display:block;
+    width: 0px;
+    height: 0px;
+    border:10px solid white;
+    border-color:transparent white transparent transparent;
+    position: absolute;
+    top: 50%;
+    left:-19px;
+}
+
+.circle {
+    display:inline-block;
+    border:1px solid silver;
+    width: 10px;
+    height: 10px;
+    border-radius:50%;
+    margin:20px 5px;
+}
+
+.circle:first-child {
+    background-color:silver;
+}
+
+/* 第八栏 */
+#row8 {
+    height: 557px;
+}
+#row8-left,#row8-right{
+    position: relative;
+}
+.intro {
+    text-align:left;
+    position: absolute;
+    top: 112px;
+    right: 0px;
+    width: 287px;
+}
+.intro h5 {
+    color:gray;
+}
+
+.intro p{
+    color:silver;
+    font-size: 12px;
+    line-height: 1.8;
+    margin-top: 27px;
+}
+.more {
+    text-align:right;
+    color:gray;
+    font-size: 10px;
+    margin-bottom: 39px;
+    line-height: 1.8;
+    display:list-item;
+    list-style-image:url(images/item.png);
+    width: 20px;
+    position: relative;
+    left:250px;
+}
+
+#application {
+    position: absolute;
+    top: 112px;
+    left: 76px;
+}
+
+#application input,
+#application textarea,
+#application button {
+    border:none;
+    background-color:#f2f2f2;
+}
+#table {
+    font-size:14px;
+    border-spacing:10px;
+    text-align:left;
+    color:gray;
+}
+td {
+    background-color: #f2f2f2;
+    padding-left:10px;
+}
+.box {
+    width: 311px;
+    height: 41px;
+}
+#td-text label{
+    vertical-align:top;
+}
+#td-submit,#td-text {
+    padding:10px;
+}
+#td-submit {
+    text-align:center;
+}
+#submit {
+    border:none;
+    color:gray;
+}
+
+/* 第九栏 */
+#row9 {
+    height: 358px;
+    background-color: rgb(50,54,62);
+    color:white;
+    line-height: 1.5;
+}
+#row9 p:nth-child(1){
+    margin: 92px 0 10px 0;
+    font-size: 16px;
+}
+#row9 p:nth-child(2) {
+    font-size: 12px;
+    color:silver;
+    margin-bottom: 20px;
+}
+#row9 input {
+    border:none;
+    width: 430px;
+    height: 41px;
+    padding-left:10px;
+}
+#row9 button {
+    width: 80px;
+    height: 41px;
+    border:none;
+    background-color: rgb(112,114,120);
+    color:white;
+    vertical-align:top;
+}
+
+/* 脚注 */
+#foot {
+    height: 56px;
+    background-color: rgb(47,47,56);
+    color:white;
+    position: relative;
+    font-size: 14px;
+}
+#foot span {
+    position: absolute;
+    left: 60px;
+    top: 20px;
+}
+#foot a {
+    position: absolute;
+    right: 50px;
+    top: 20px;
+    color:white;
+    text-decoration:none;
+    cursor:pointer;
+}
+
+
