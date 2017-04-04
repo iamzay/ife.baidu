@@ -1,0 +1,31 @@
+*,*:before,*:after {
+    margin: 0px;
+    padding: 0px;
+    box-sizing:border-box;
+}
+
+body {
+    display:flex;
+    justify-content:center;
+    padding:20px;
+}
+
+table {
+    width: 500px;
+    border-collapse:collapse;
+}
+table th,table td {
+    border:1px solid #000;
+    padding-left:10px;
+}
+
+thead tr:first-child {
+    background-color:black;
+    color:white;
+}
+
+tr:nth-child(2),tr:nth-child(4),tr:nth-child(6),
+tr:nth-child(8),tr:nth-child(10) {
+    background-color:gray;
+    color:black;
+}
