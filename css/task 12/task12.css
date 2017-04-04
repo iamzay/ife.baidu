@@ -7,12 +7,16 @@
 body {
     display:flex;
     justify-content:center;
+    flex-flow:row wrap;
     padding:20px;
+    width: 700px;
+    margin:auto;
 }
 
 table {
     width: 500px;
     border-collapse:collapse;
+    margin:25px;
 }
 table th,table td {
     border:1px solid #000;
@@ -28,4 +32,76 @@ tr:nth-child(2),tr:nth-child(4),tr:nth-child(6),
 tr:nth-child(8),tr:nth-child(10) {
     background-color:gray;
     color:black;
+}
+
+.container {
+    width: 500px;
+    height: 200px;
+    background-color:green;
+    display:flex;
+    justify-content:flex-end;
+    align-items:flex-end;
+    position: relative;
+    z-index:1;
+}
+.box {
+    width: 40px;
+    height: 40px;
+    background-color:rgba(256,256,256,0.5);
+    colo:white;
+    text-align:center;
+    line-height:40px;
+    text-decoration:none;
+    z-index:3;
+}
+
+a:nth-of-type(2) {
+    margin:0 5px;
+}
+#i2,#i3 {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 0px;
+    height: 200px;
+    background-color:blue;
+    z-index:2;
+}
+a {
+    text-decoration:none;
+}
+a:visited {
+    color:white;
+}
+@keyframes leftToCenter {
+    from {
+        width: 0px;
+    }
+    to {
+        width: 250px;
+    }
+}
+@keyframes centerToRight {
+    from {
+        width: 250px;
+    }
+    to {
+        width: 500px;
+    }
+}
+#i2:target {
+    animation:leftToCenter 1s forwards;
+}
+#i3:target {
+    animation:centerToRight 1s forwards;
+}
+
+input {
+    margin-bottom:25px;
+    -webkit-transition:width 1s;
+    width: 200px;
+}
+input:focus {
+    width: 320px;
+    border-width: 2px;
 }
